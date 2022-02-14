@@ -187,11 +187,14 @@
   display: flex;
   justify-content: space-between;
 }
-.card-flex div {
+.card-flex > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .btn-remove {
