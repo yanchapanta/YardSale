@@ -1,0 +1,390 @@
+@import 'values';
+@import 'utilities';
+@import 'mixins';
+//GENERAL
+.btn-search {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	input {
+		border: none;
+		outline: none;
+		background-color: transparent;
+		&:focus {
+			font-weight: 500;
+			color: $gray-color;
+		}
+	}
+}
+
+.btn-order {
+	label {
+		@include text1;
+	}
+	select {
+		@include text1;
+		border: none;
+		color: $gray-color;
+		outline: none;
+		font-weight: normal;
+
+		&:focus {
+			outline: 1px solid $gray-alpha-color;
+		}
+	}
+}
+.bg {
+	background: #f7f7f7;
+	border: 1px solid #f7f7f7;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+//------------------HOME1---------------------//
+.section-home1 {
+	width: 100vw;
+	// height: calc(100vh - $bar-mobil-height - $bar-mobil-height);
+
+}
+.section-home1-container {
+	//  width: 100%;
+	//  height: 100%;
+	//  display: grid;
+	//  grid-template-rows: auto 1fr;
+	//  gap: 2rem;
+	//  .bg {
+	//  	padding: 0.5rem 1rem;
+	//  	align-items: center;
+	//  }
+}
+// .menu-home1{
+// 	 display: flex;
+// 	 flex-direction: column;
+// 	 overflow: hidden;
+// 	 overflow-x: scroll;
+// 	 width: clamp(330px , 5vw,500px);
+// 	 @include desktop(){
+// 	 	display: none;
+// 	 }
+// 	 .menu{
+// 	 	width:500px;
+// 	 	gap: 1.5rem;
+// 	 }
+//  	 &::-webkit-scrollbar {
+//  	 	background-color: transparent;
+//  	 	display: none;
+//  	 }
+// }
+// .search-header{
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 1rem;
+// 	@include desktop(){
+// 		flex-direction: row;
+		
+
+// 	}
+// }
+
+
+
+
+// $anchoCard: 160px;
+// $anchoCardPhone: 2px;
+// $anchoCardTablet: 18px;
+// $anchoCardDesktop: 84px;
+// .cards {
+// 	width: 100%;
+// }
+// .cards-container {
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fit, $anchoCard);
+// 	grid-auto-rows: calc($anchoCard + ($anchoCard / 5));
+// 	gap: 1rem;
+// 	justify-content: space-between;
+// 	@include phone() {
+// 		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardPhone);
+// 		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardPhone);
+// 	}
+// 	@include tablet() {
+// 		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardTablet);
+// 		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardTablet);
+// 	}
+// 	@include desktop() {
+// 		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardDesktop);
+// 		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardDesktop);
+// 	}
+// }
+
+// .card {
+// 	width: 100%;
+// 	height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// 	gap: 1rem;
+// }
+// .card-img {
+// 	width: inherit;
+// 	height: $anchoCard;
+
+// 	box-shadow: $box-shadow2;
+// 	border-radius: 20px;
+// 	overflow: hidden;
+// 	mix-blend-mode: normal;
+
+// 	position: relative;
+// 	@include phone() {
+// 		height: calc($anchoCard + $anchoCardPhone);
+// 	}
+// 	@include tablet() {
+// 		height: calc($anchoCard + $anchoCardTablet);
+// 	}
+// 	@include desktop() {
+// 		height: calc($anchoCard + $anchoCardDesktop);
+// 	}
+// 	img {
+// 		object-fit: cover;
+// 		object-position: center;
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+//}
+// .nav-categoria {
+// 	width: clamp(290px, 4vw, 600px);
+// 	overflow-x: scroll;
+// 	overflow-y: hidden;
+// 	&::-webkit-scrollbar {
+// 		// color: red;
+// 		background-color: transparent;
+// 		display: none;
+// 	}
+// }
+
+// .menu-phone-row {
+// 	// width:50%;
+// 	@include flex-row;
+// 	// align-items: center;
+// 	// display: flex;
+// 	// justify-content: flex-start;
+
+// 	@include desktop(){
+// 		//gap: 1rem;
+
+// 	}
+// 	a {
+// 		display: block;
+// 		cursor: pointer;
+// 		small {
+// 			display: block;
+// 			cursor: pointer;
+// 			@include text-menu();
+// 			@include btn-link($green-alpha-color);
+// 		}
+
+// 		&:nth-child(1) {
+// 			@include text-menu();
+// 			@include btn-all($green-alpha-color);
+// 			padding: 0.5rem 1rem;
+// 			width: max-content;
+// 			@include desktop() {
+// 				width: auto;
+// 				border-radius: none;
+// 				outline: none;
+// 				padding: 0;
+// 				border: none;
+// 				background-color: transparent;
+// 				color: transparent;
+// 				transition: background-color 0.3s linear, color 0.3s linear;
+// 				&:hover{
+// 					color: #ffffff;
+// 					background-color: transparent;
+// 				}
+// 			}
+// 		}
+// 		&:nth-child(2) {
+// 			@include desktop() {
+// 				@include text-menu();
+// 				@include btn-all($green-alpha-color);
+// 				padding: 0.5rem 1rem;
+// 				width: max-content;
+// 			}
+// 		}
+
+// 		@include text-menu();
+// 		color: $menu-color;
+// 		display: block;
+// 		padding:1rem .5rem;
+// 		&:hover {
+// 			color: $black-color;
+// 		}
+// 		@include desktop(){
+// 			padding: 1rem;
+// 		}
+// 	}
+// }
+
+/*
+img{
+	width: 20%;
+}
+.sec-home1 {
+	display: block;
+}
+
+.btn-order {
+	label {
+		@include text1;
+	}
+	select {
+		@include text1;
+		border: none;
+		color: $gray-color;
+		outline: none;
+		font-weight: normal;
+
+		&:focus {
+			outline: 1px solid $gray-alpha-color;
+		}
+	}
+}
+.sec-home1 {
+	
+	// modi1
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.sec-home-search {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	@include desktop() {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		align-items: center;
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+}
+.nav-categoria {
+	width: clamp(290px, 4vw, 600px);
+	overflow-x: scroll;
+	overflow-y: hidden;
+	&::-webkit-scrollbar {
+		// color: red;
+		background-color: transparent;
+		display: none;
+	}
+}
+
+$anchoCard: 160px;
+$anchoCardPhone: 2px;
+$anchoCardTablet: 18px;
+$anchoCardDesktop: 84px;
+.cards {
+	width: 100%;
+}
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, $anchoCard);
+	grid-auto-rows: calc($anchoCard + ($anchoCard / 5));
+	gap: 1rem;
+	justify-content: space-between;
+	@include phone() {
+		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardPhone);
+		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardPhone);
+	}
+	@include tablet() {
+		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardTablet);
+		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardTablet);
+	}
+	@include desktop() {
+		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardDesktop);
+		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardDesktop);
+	}
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.card-img {
+	width: inherit;
+	height: $anchoCard;
+
+	box-shadow: $box-shadow2;
+	border-radius: 20px;
+	overflow: hidden;
+	mix-blend-mode: normal;
+
+	position: relative;
+	@include phone() {
+		height: calc($anchoCard + $anchoCardPhone);
+	}
+	@include tablet() {
+		height: calc($anchoCard + $anchoCardTablet);
+	}
+	@include desktop() {
+		height: calc($anchoCard + $anchoCardDesktop);
+	}
+	img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+	}
+}
+.btn-remove{
+    @include btn-remove();
+    display: none;
+    width: 147px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.card-img:hover .btn-remove {
+    display: flex;
+}
+.card-price {
+	@include text2;
+	color: $black-color;
+	font-weight: 700;
+	font-family: $fontRoboto;
+}
+.card-flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		gap: 0.5rem;
+	}
+}
+.card-name {
+	@include text-gmail;
+	font-family: $fontRoboto;
+	color: $gray-alpha-color;
+	font-weight: 400;
+	color: #797979;
+}
+.card-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/

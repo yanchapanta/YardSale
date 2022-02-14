@@ -1,0 +1,53 @@
+.browser-bar > div:first-child {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.browser-bar > div:nth-child(2) {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.browser-bar {
+  width: 100vw;
+  height: 4rem;
+  background-color: #F7F7F7;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (min-width: 64em) {
+  .browser-bar {
+    display: none;
+  }
+}
+.browser-bar > div:first-child {
+  justify-self: start;
+  align-self: center;
+}
+.browser-bar > div:nth-child(2) {
+  align-self: end;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000000;
+}
+.browser-bar > div:last-child {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=BrowserBar.css.map */
