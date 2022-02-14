@@ -64,6 +64,7 @@
     `;
     // BOTON SHOPPING ACTIVA Y CHECKED
     
+    const modal=document.querySelector('#modal-add-card');
     setTimeout(() => {
         const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
         
@@ -73,8 +74,11 @@
                 if (!item.classList.contains('checked')) {
                     console.log('yes checked');
                     item.innerHTML = svgHtmlShopping; 
+                    //llamar caja modal
+                    // modal.style.opacity='1';
                 }else{
                     item.innerHTML = svgHtml;    
+                    // modal.style.opacity='0';
                 }        
             });
         });
@@ -106,7 +110,7 @@
                          <p class="card-price">${product.price}</p>
                          <p class="card-name">${product.name}</p>
                      </div>
-                     <div class="card-icon-shopping">
+                     <a href="#modal-add-card" class="card-icon-shopping">
                          <svg width="49" height="48"
                       
                          viewBox="0 0 49 48" fill="none"
@@ -143,7 +147,7 @@
                              </defs>
                          </svg>
       
-                     </div>
+                     </a>
                  </div>
              </div>
          `;

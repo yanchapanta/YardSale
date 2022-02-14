@@ -110,6 +110,11 @@ section.sec-modal-add-card .btn-modal-close .icon-close-color:hover {
     right: 0;
   }
 }
+@media only screen and (min-width: 64em) {
+  .sec-modal-add-card-container {
+    grid-template-rows: 14rem calc(100vh - 22rem);
+  }
+}
 
 .modal-add-card-carousel {
   overflow: hidden;
