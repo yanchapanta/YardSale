@@ -180,6 +180,11 @@ label {
 .container-1 {
   padding: 1rem;
 }
+@media only screen and (min-width: 64em) {
+  .container-1 {
+    padding: 0rem 2rem;
+  }
+}
 
 .section-login {
   width: 100vw;
