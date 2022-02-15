@@ -29,20 +29,59 @@ section.sec-modal-add-card.shopping-card {
 .shopping-card-container {
   display: flex;
   height: auto;
-  padding: 3.5rem 1rem 1rem 1rem;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .shopping-card-row {
+  position: relative;
   width: 100%;
   display: grid;
+  z-index: 1;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
 .shopping-card-row a {
   margin-top: 6px;
+}
+.shopping-card-row:first-child {
+  margin-top: 2rem;
+}
+.shopping-card-row:hover {
+  background: #d8d8d8;
+  mix-blend-mode: normal;
+  z-index: 20;
+}
+.shopping-card-row:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(90deg, rgba(216, 216, 216, 0.13) 25%, #d8d8d8 25% 91%, rgba(216, 216, 216, 0.13) 91%);
+  z-index: 5;
+}
+.shopping-card-row:hover::before {
+  position: absolute;
+  content: "REMOVED FROM CART";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 20px;
+  z-index: 10;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+  color: #404040;
+  mix-blend-mode: normal;
 }
 
 .shopping-card-img {
