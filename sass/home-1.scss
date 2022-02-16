@@ -1,7 +1,6 @@
 @import 'values';
 @import 'mixins';
 //GENERAL
-
 .btn-search {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -38,6 +37,7 @@
 		}
 	}
 }
+//fondo
 .bg {
 	background: #f7f7f7;
 	border: 1px solid #f7f7f7;
@@ -58,7 +58,7 @@
 	grid-template-rows: auto 1fr;
 	gap: 1rem;
 }
-
+//------------------menu---------------------//
 .menu-home1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -101,32 +101,33 @@
 		padding: 2rem 0;
 	}
 }
+//------------------tarjetas de productos---------------------//
 
-$anchoCard: 160px;
-$anchoCardPhone: 2px;
-$anchoCardTablet: 18px;
-$anchoCardDesktop: 84px;
 .cards {
 	width: 100%;
 }
 .cards-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, $anchoCard);
-	grid-auto-rows: calc($anchoCard + ($anchoCard / 5));
+	grid-template-columns: repeat(2, minmax(163px,350px));
+	grid-auto-rows:253px;
 	gap: 1rem;
-	justify-content: space-between;
-	@include phone() {
-		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardPhone);
-		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardPhone);
+	@include phone(){
+		grid-template-columns: repeat(2, minmax(163px,350px));
+		grid-auto-rows:209px;
+		
 	}
-	@include tablet() {
-		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardTablet);
-		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardTablet);
+	@include tablet(){
+		grid-template-columns: repeat(3, minmax(163px,350px));
+		grid-auto-rows:209px;
+		
 	}
-	@include desktop() {
-		grid-template-columns: repeat(auto-fit, $anchoCard + $anchoCardDesktop);
-		grid-auto-rows: calc($anchoCard + ($anchoCard / 5) + $anchoCardDesktop);
+	@include desktop(){
+		grid-template-columns: repeat(5, minmax(163px,350px));
+		grid-auto-rows:250px;
+
 	}
+	
+	
 }
 .card {
 	width: 100%;
@@ -137,22 +138,12 @@ $anchoCardDesktop: 84px;
 	gap: 1rem;
 }
 .card-img {
-	width: inherit;
-	height: $anchoCard;
 	box-shadow: $box-shadow2;
 	border-radius: 20px;
 	overflow: hidden;
 	mix-blend-mode: normal;
 	position: relative;
-	@include phone() {
-		height: calc($anchoCard + $anchoCardPhone);
-	}
-	@include tablet() {
-		height: calc($anchoCard + $anchoCardTablet);
-	}
-	@include desktop() {
-		height: calc($anchoCard + $anchoCardDesktop);
-	}
+	
 	img {
 		object-fit: cover;
 		object-position: center;
