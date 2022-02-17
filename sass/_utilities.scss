@@ -91,6 +91,21 @@ a {
 		text-decoration: underline;
 	}
 }
+.text-gmail{
+	@include text-gmail();
+}
+.title-1{
+	@include title-1;
+}
+.title-submenu-dropdown{
+	@include title-submenu-dropdown;
+}
+.box-shadow-1{
+	@include box-shadow-1;
+}
+.bar-top-1{
+	@include bar-top;
+}
  .icon {
  	fill: $gray-color;
  	-webkit-transition: fill 0.3s linear;

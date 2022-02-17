@@ -247,16 +247,35 @@
 	color: #000000;
 }
 
-// @mixin title-1{
-// 	font-family: #{$font1};
-// 	font-weight: bold;
-// 	font-style: normal;
-// 	font-size: 18px;
-// 	line-height: 100%;
-// 	line-height: 22px;
-// 	color: $black-color;
+@mixin title-1 {
+	font-family: #{$font1};
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 100%;
+	line-height: 22px;
+	color: $black-color;
+}
+@mixin title-submenu-dropdown {
+	font-family: #{$font1};
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	/* identical to box height */
 
-// }
+	text-align: right;
+
+	color: #000000;
+}
+@mixin box-shadow-1 {
+	box-shadow: $box-shadow1;
+}
+@mixin bar-top {
+	mix-blend-mode: normal;
+opacity: 0.1;
+border-top: 1px solid #979797;
+}
 
 // @mixin input($size){
 // 	width: 100%;

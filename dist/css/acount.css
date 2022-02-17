@@ -1,99 +1,18 @@
-a:hover {
-  text-decoration: underline;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 95 |     @include text-gmail();
+ *    |     ^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\_utilities.scss 95:2  @import
+ *   sass\acount.scss 2:9       root stylesheet */
 
-.icon {
-  fill: #797979;
-  -webkit-transition: fill 0.3s linear;
-  -o-transition: fill 0.3s linear;
-  transition: fill 0.3s linear;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 95 \2502      @include text-gmail();\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\_utilities.scss 95:2  @import\a   sass\\acount.scss 2:9       root stylesheet";
 }
-
-.icon .icon-menu-color {
-  -webkit-transition: fill 0.3s linear;
-  -o-transition: fill 0.3s linear;
-  transition: fill 0.3s linear;
-}
-
-.icon:hover .icon-menu-color {
-  fill: #000000;
-}
-
-.icon-close-color {
-  fill: #797979;
-}
-
-.icon-close .icon-close-color {
-  -webkit-transition: fill 0.3s linear;
-  -o-transition: fill 0.3s linear;
-  transition: fill 0.3s linear;
-}
-
-.icon-close:hover .icon-close-color {
-  fill: #000000;
-}
-
-.card-icon-shopping .card-icon-shopping-hover {
-  -webkit-transition: fill 0.3s linear, stroke 0.3s linear;
-  -o-transition: fill 0.3s linear, stroke 0.3s linear;
-  transition: fill 0.3s linear, stroke 0.3s linear;
-}
-
-.card-icon-shopping:hover .card-icon-shopping-hover {
-  fill: #81A385;
-  stroke: #81A385;
-}
-
-.section-acount {
-  width: 100vw;
-  height: calc(100vh - 4rem);
-}
-@media only screen and (min-width: 64em) {
-  .section-acount {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-.section-acount-container {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 6rem 1fr;
-}
-@media only screen and (min-width: 64em) {
-  .section-acount-container {
-    width: 30%;
-    height: 70%;
-    grid-template-rows: 4rem 1fr;
-  }
-}
-.section-acount-container .subtitle {
-  display: flex;
-  align-items: center;
-  gap: 0rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.section-acount-container .form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=acount.css.map */

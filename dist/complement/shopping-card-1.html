@@ -17,12 +17,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    !-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-<!-- menu de desktop -->
+    <!-- menu de desktop -->
     <div class="menu-header menu-header-phone menu-header-phone-shopping">
         <div class="btn-burguer" style="display: var(--hidden-desktop);">
             <img src="../img/icon/icon_menu.svg" alt="logotipo">
@@ -30,10 +33,10 @@
         <div class="logotipo" style="display: var(--hidden-phone);">
             <img src="../img/logo/logo_yard_sale.svg" alt="logotipo">
         </div>
-        <div class="subtitle-shopping" style="display: var(--hidden-desktop);" >
+        <div class="subtitle-shopping" style="display: var(--hidden-desktop);">
             <h2>Shopping cart</h2>
         </div>
-        
+
         <nav class="menu">
             <a class="btn-menu" href="#">All</a>
             <a href="#">Clothes</a>
@@ -43,15 +46,21 @@
         </nav>
 
         <div>
-            <div class="btn-order" style="display: var(--hidden-phone);">
 
-                <select id="order">
-                    <option>camilayokoo@gmail.com</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
+            <!-- opcines de gmail de boostrap-->
+            <div class="dropdown btn-order" style="display: var(--hidden-phone);">
+                <button class="btn btn-white dropdown-toggle text-gmail" style="background-color: white;" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    camilayokoo@gmail.com
+                </button>
+                <div class="dropdown-menu box-shadown-1" aria-labelledby="dropdownMenuButton"
+                    style="margin-top:1rem;border-radius: 5px; left: 0;right: 0rem;">
+                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-orders.html">My orders</a>
+                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-acount.html">My account</a>
+                    <a class="dropdown-item btn-link bar-top-1 p-3" href="../index.html">log in</a>
+                </div>
             </div>
+
             <div class="icon" style="display: var(--hidden-phone);">
                 <svg width="30" height="27" viewBox="0 0 30 27" class="icon-menu-color" fill="blue"
                     xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +162,7 @@
                                 </a>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </article>
@@ -161,24 +170,25 @@
     </section>
     <!-- MODAL -->
     <section id="modal-add-card" class="sec-modal-add-card shopping-card">
-        
-        <a href="#close-001" class="icon-close btn-modal-close throw-circle">            
+
+        <a href="#close-001" class="icon-close btn-modal-close throw-circle">
             <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-close-color"
-                 d="M7.83868 0.240629C8.16564 -0.0802096 8.70981 -0.0802096 9.04821 0.240629C9.37517 0.550628 9.37517 1.06657 9.04821 1.37585L2.91521 7.19068H23.1533C23.625 7.1914 24 7.54693 24 7.99422C24 8.44151 23.625 8.8086 23.1533 8.8086H2.91521L9.04821 14.6126C9.37517 14.9334 9.37517 15.4501 9.04821 15.7594C8.70981 16.0802 8.16488 16.0802 7.83868 15.7594L0.253796 8.56797C-0.0845985 8.25797 -0.0845985 7.74203 0.253796 7.43275L7.83868 0.240629Z" fill="#C7C7C7"/>
-                </svg>
+                    d="M7.83868 0.240629C8.16564 -0.0802096 8.70981 -0.0802096 9.04821 0.240629C9.37517 0.550628 9.37517 1.06657 9.04821 1.37585L2.91521 7.19068H23.1533C23.625 7.1914 24 7.54693 24 7.99422C24 8.44151 23.625 8.8086 23.1533 8.8086H2.91521L9.04821 14.6126C9.37517 14.9334 9.37517 15.4501 9.04821 15.7594C8.70981 16.0802 8.16488 16.0802 7.83868 15.7594L0.253796 8.56797C-0.0845985 8.25797 -0.0845985 7.74203 0.253796 7.43275L7.83868 0.240629Z"
+                    fill="#C7C7C7" />
+            </svg>
 
-                
+
         </a>
-        <div class="subtitle-shopping mt-1" style="display: var(--hidden-phone);width: 74%;" >
+        <div class="subtitle-shopping mt-1" style="display: var(--hidden-phone);width: 74%;">
             <h2>Shopping cart</h2>
         </div>
-        
+
         <div class="shopping-card-container">
-           <div class="shopping-card-row">
-                <div  class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');" >
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
                 </div>
-                <div class="shopping-card-row-info" >
+                <div class="shopping-card-row-info">
                     <p class="card-name">Round shelf</p>
                     <p class="card-price">$ 120,00</p>
                 </div>
@@ -192,10 +202,10 @@
                     </svg>
                 </a>
             </div>
-           <div class="shopping-card-row">
-                <div  class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');" >
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
                 </div>
-                <div class="shopping-card-row-info" >
+                <div class="shopping-card-row-info">
                     <p class="card-name">Round shelf</p>
                     <p class="card-price">$ 120,00</p>
                 </div>
@@ -209,10 +219,10 @@
                     </svg>
                 </a>
             </div>
-           <div class="shopping-card-row">
-                <div  class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');" >
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
                 </div>
-                <div class="shopping-card-row-info" >
+                <div class="shopping-card-row-info">
                     <p class="card-name">Round shelf</p>
                     <p class="card-price">$ 120,00</p>
                 </div>
@@ -226,10 +236,10 @@
                     </svg>
                 </a>
             </div>
-           <div class="shopping-card-row">
-                <div  class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');" >
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
                 </div>
-                <div class="shopping-card-row-info" >
+                <div class="shopping-card-row-info">
                     <p class="card-name">Round shelf</p>
                     <p class="card-price">$ 120,00</p>
                 </div>
@@ -243,10 +253,10 @@
                     </svg>
                 </a>
             </div>
-           <div class="shopping-card-row">
-                <div  class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');" >
+            <div class="shopping-card-row">
+                <div class="shopping-card-img" style="--shopping-card-img:url('../img/product/pro4.jpg');">
                 </div>
-                <div class="shopping-card-row-info" >
+                <div class="shopping-card-row-info">
                     <p class="card-name">Round shelf</p>
                     <p class="card-price">$ 120,00</p>
                 </div>
@@ -267,14 +277,23 @@
             <div class="form-row">
                 <input class="btn-log" type="submit" value="Checkout">
             </div>
-           
+
         </div>
     </section>
 
 
 
     <script src="../js/styles.js"></script>
-    
+    <!-- js bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
