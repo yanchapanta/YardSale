@@ -1,6 +1,6 @@
-(()=>{
-    //ENTRRADAS
-    const svgHtml = `
+(() => {
+	//ENTRRADAS
+	const svgHtml = `
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_0_99)">
             <circle cx="24" cy="24" r="20" fill="white"/>
@@ -24,7 +24,7 @@
             </svg>
     
     `;
-    const svgHtmlShopping = `
+	const svgHtmlShopping = `
             <svg width="49" height="48"
                                                     
                 viewBox="0 0 49 48" fill="none"
@@ -62,54 +62,45 @@
                 </svg>
     
     `;
-    // BOTON SHOPPING ACTIVA Y CHECKED
-    
-    const modal=document.querySelector('#modal-add-card');
-    setTimeout(() => {
-        const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
-        
-        cardIconEnabled.forEach((item) => {
-            item.addEventListener('click', (e) => {            
-                item.classList.toggle('checked');            
-                if (!item.classList.contains('checked')) {
-                    console.log('yes checked');
-                    item.innerHTML = svgHtmlShopping; 
-                    //llamar caja modal
-                    // modal.style.opacity='1';
-                }else{
-                    item.innerHTML = svgHtml;    
-                    // modal.style.opacity='0';
-                }        
-            });
-        });
-        
-    }, 3000);
-   
-})(),(()=>{    
-     const idCardProducts = document.querySelector('#idCardProducts');
-     let pathAbsolute=self.location.href;
-     //Redireccionar imagenes  cuando sea home-1.html === index.html y cuando esta en home-2.html
-     console.log(pathAbsolute.includes('home-2.html'));
-     let imgPath="";
-     if (pathAbsolute.includes('home-2.html')) {
-         imgPath="../img"
-        }else{
-            imgPath="img"
-            
-        }
-    //BASE DE DATOS DE LOS PRODUCTOS EN CARD
-	 const arrayProducts = [
-         { id: '001', image: 'pro1', name: 'Roberto Morales', price: '$120,00' },
-	 	{ id: '001', image: 'pro1', name: 'Round shelf', price: '$120,00' },
-	 	{ id: '002', image: 'pro2', name: 'Arnol shelf', price: '$150,00' },
-	 	{ id: '003', image: 'pro3', name: 'Rebeca shelf', price: '$220,00' },
-	 	{ id: '003', image: 'pro4', name: 'Rebeca shelf', price: '$220,00' },
-	 	{ id: '003', image: 'pro5', name: 'Rebeca shelf', price: '$220,00' },
-	 	{ id: '004', image: 'pro5', name: 'Marco yanchapanta', price: '$160,00' }
-	 ];
-     arrayProducts.forEach((product) => {
-
-	 	idCardProducts.innerHTML += `
+	// BOTON SHOPPING ACTIVA Y CHECKED
+	setTimeout(() => {
+		const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
+		cardIconEnabled.forEach((item) => {
+			item.addEventListener('click', (e) => {
+				item.classList.toggle('checked');
+				if (!item.classList.contains('checked')) {
+					console.log('yes checked');
+					item.innerHTML = svgHtmlShopping;
+				} else {
+					item.innerHTML = svgHtml;
+				}
+			});
+		});
+	}, 3000);
+})(),
+	(() => {
+		const idCardProducts = document.querySelector('#idCardProducts');
+		let pathAbsolute = self.location.href;
+		//Redireccionar imagenes  cuando sea home-1.html === index.html y cuando esta en home-2.html
+	
+		let imgPath = '';
+		if (pathAbsolute.includes('home-2.html')) {
+			imgPath = '../img';
+		} else {
+			imgPath = 'img';
+		}
+		//BASE DE DATOS DE LOS PRODUCTOS EN CARD
+		const arrayProducts = [
+			{ id: '001', image: 'pro1', name: 'Roberto Morales', price: '$120,00' },
+			{ id: '001', image: 'pro1', name: 'Round shelf', price: '$120,00' },
+			{ id: '002', image: 'pro2', name: 'Arnol shelf', price: '$150,00' },
+			{ id: '003', image: 'pro3', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '003', image: 'pro4', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '003', image: 'pro5', name: 'Rebeca shelf', price: '$220,00' },
+			{ id: '004', image: 'pro5', name: 'Marco yanchapanta', price: '$160,00' }
+		];
+		arrayProducts.forEach((product) => {
+			idCardProducts.innerHTML += `
              <div class="card">
                  <div class="card-img">
                      <a class="btn-remove" href="#">Removed from cart</a>
@@ -161,5 +152,5 @@
                  </div>
              </div>
          `;
-	 });
-})()
+		});
+	})();
