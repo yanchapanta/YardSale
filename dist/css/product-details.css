@@ -1,3 +1,7 @@
+a:hover {
+  text-decoration: underline;
+}
+
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;

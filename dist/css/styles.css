@@ -682,6 +682,10 @@ label {
   display: grid;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;
@@ -801,6 +805,10 @@ label {
   display: grid;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;
@@ -843,10 +851,6 @@ label {
   stroke: #81A385;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .browser-bar {
   width: 100vw;
   height: 4rem;
@@ -862,9 +866,11 @@ a:hover {
 }
 .browser-bar > div:first-child {
   justify-self: start;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 .browser-bar > div:nth-child(2) {
+  -ms-flex-item-align: end;
   align-self: end;
   justify-self: end;
   display: flex;
@@ -954,6 +960,10 @@ label {
 
 .section-login-container {
   display: grid;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .icon {
@@ -1057,7 +1067,7 @@ label {
   transition: background-color 0.3s linear;
 }
 .input:focus {
-  background-color: #f0f0f0;
+  background-color: #e7dfdf;
 }
 
 .icon-email {
@@ -1234,6 +1244,10 @@ label {
   display: grid;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;
@@ -1278,12 +1292,18 @@ label {
 
 .section-acount {
   width: 100vw;
-  height: calc(100vh - 4rem - 4rem);
+  height: calc(100vh - 4rem);
 }
 @media only screen and (min-width: 64em) {
   .section-acount {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -1304,12 +1324,21 @@ label {
   display: flex;
   align-items: center;
   gap: 0rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .section-acount-container .form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1388,6 +1417,10 @@ label {
 
 .section-login-container {
   display: grid;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .icon {
@@ -1831,6 +1864,10 @@ label {
 
 .section-login-container {
   display: grid;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .icon {

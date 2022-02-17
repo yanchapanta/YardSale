@@ -50,6 +50,10 @@ label {
   display: grid;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;
@@ -151,7 +155,7 @@ label {
   transition: background-color 0.3s linear;
 }
 .input:focus {
-  background-color: #f0f0f0;
+  background-color: #e7dfdf;
 }
 
 .icon-email {

@@ -113,21 +113,16 @@
 	gap: 1rem;
 	@include phone(){
 		grid-template-columns: repeat(2, minmax(163px,350px));
-		grid-auto-rows:209px;
-		
+		grid-auto-rows:209px;		
 	}
 	@include tablet(){
 		grid-template-columns: repeat(3, minmax(163px,350px));
-		grid-auto-rows:209px;
-		
+		grid-auto-rows:209px;		
 	}
 	@include desktop(){
 		grid-template-columns: repeat(5, minmax(163px,350px));
 		grid-auto-rows:250px;
-
-	}
-	
-	
+	}	
 }
 .card {
 	width: 100%;
