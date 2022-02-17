@@ -195,15 +195,6 @@
 	}
 }
 
-// // font fuentes de letra
-// @mixin text0(){
-// font-family: #{$font1};
-// font-style: normal;
-// font-weight:  normal;
-// font-size: 12px	;
-// line-height: 15px;
-// color: $black-color;
-// }
 @mixin text1() {
 	font-family: #{$font1};
 	font-style: normal;
@@ -212,29 +203,7 @@
 	line-height: 18px;
 	color: $black-color;
 }
-// @mixin text1-login(){
-// font-family: #{$font1};
-// font-weight:  Bold;
-// font-size: 18px	;
-// line-height: 23px;
-// line-height: 100%;
-// color: $black-color;
-// }
-// @mixin text2(){
-// 	font-family: #{$font1};
-// 	font-weight: normal;
-// 	font-size: 16px;
-// 	line-height: 20px;
-// 	line-height: 100%;
-// 	color: $gray-alpha-color;
-// }
 
-// @mixin text-menu(){
-// 	font-family: #{$font1};
-// 	font-style: normal;
-// 	font-size: 16px;
-// 	line-height: 20px;
-// }
 @mixin text-gmail() {
 	font-family: #{$font1};
 	font-family: Quicksand;
@@ -242,8 +211,6 @@
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 17px;
-	/* identical to box height */
-
 	color: #000000;
 }
 
@@ -276,19 +243,3 @@
 opacity: 0.1;
 border-top: 1px solid #979797;
 }
-
-// @mixin input($size){
-// 	width: 100%;
-// 	height: $size;
-// 	border-radius: 10px;
-// 	outline: none;
-// 	padding: 1rem .5rem;
-// }
-
-// @mixin info-contenido{
-// 	@include flex-col();
-// 	padding: 0 2rem;
-// 	text-align: center;
-// 	gap: 1rem;
-
-// }

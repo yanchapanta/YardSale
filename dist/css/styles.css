@@ -693,7 +693,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -778,6 +777,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -928,7 +932,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -1013,6 +1016,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -1197,7 +1205,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -1282,6 +1289,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -1591,7 +1603,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -1676,6 +1687,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -1878,7 +1894,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -1963,6 +1978,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -2385,7 +2405,6 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -2470,6 +2489,11 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .btn-search {
+    padding: 0.5rem 1rem;
+  }
 }
 .btn-search input {
   border: none;
@@ -2677,6 +2701,10 @@ section.sec-modal-add-card:target {
   text-align: center;
   color: #ffffff;
   transition: background-color 0.3s linear;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 0.5rem;
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2869,7 +2897,6 @@ section.sec-modal-add-card .btn-modal-close {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #000000;
 }
 

@@ -131,12 +131,15 @@ section.sec-modal-add-card:target {
 }
 .btn-add-card {
 	@include btn-log();
+	display: flex;
+	align-items: center;
+	margin: 0;
+	gap: .5rem;
 	font-family: $font1;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 22px;
-
 	color: white;
 }
 .modal-add-card-row {

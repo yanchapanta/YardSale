@@ -82,6 +82,7 @@
 				});
 			});
 		} else {
+            //INGRESO DE IMAGENES A LAS TARJETAS
 			// para usuario que ye se logianron solo para home 2
 			const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
 			cardIconEnabled.forEach((item) => {
@@ -96,20 +97,22 @@
 				});
 			});
 		}
-	}, 3000);
+	}, 300);
 })(),
 	(() => {
 		const idCardProducts = document.querySelector('#idCardProducts');
-		let pathAbsolute = self.location.href;
-		//Redireccionar imagenes  cuando sea home-1.html === index.html y cuando esta en home-2.html
 
+        //ruta absoluta
+		let pathAbsolute = self.location.href;        
+		//Redireccionar imagenes  cuando sea home-1.html === index.html 
+        //y cuando esta en home-2.html
 		let imgPath = '';
 		if (pathAbsolute.includes('index.html')) {
             imgPath = 'img';
 		} else {
 			imgPath = '../img';
 		}
-		//BASE DE DATOS DE LOS PRODUCTOS EN CARD
+		//simulacion de base de datos
 		const arrayProducts = [
 			{ id: '001', image: 'pro1', name: 'Roberto Morales', price: '$120,00' },
 			{ id: '001', image: 'pro1', name: 'Round shelf', price: '$120,00' },
