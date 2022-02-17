@@ -62,21 +62,40 @@
                 </svg>
     
     `;
-	// boton agregar mas redirigir a login por que no es usuario
 	setTimeout(() => {
-		const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
-		cardIconEnabled.forEach((item) => {
-			item.addEventListener('click', (e) => {
-				location.href = 'complement/login.html';
-				item.classList.toggle('checked');
-				if (!item.classList.contains('checked')) {
-					console.log('yes checked');
-					item.innerHTML = svgHtmlShopping;
-				} else {
-					item.innerHTML = svgHtml;
-				}
+		let pathAbsolute = self.location.href;
+		const indexHome1 = pathAbsolute.includes('index.html');
+        //redirigir boton agragar mas==== .card-icon-shopping
+		if (indexHome1) {
+			// boton agregar mas redirigir a login por que no es usuario-esto es para index
+			const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
+			cardIconEnabled.forEach((item) => {
+				item.addEventListener('click', (e) => {
+					location.href = 'complement/login.html';
+					item.classList.toggle('checked');
+					if (!item.classList.contains('checked')) {
+						console.log('yes checked');
+						item.innerHTML = svgHtmlShopping;
+					} else {
+						item.innerHTML = svgHtml;
+					}
+				});
 			});
-		});
+		} else {
+			// para usuario que ye se logianron solo para home 2
+			const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
+			cardIconEnabled.forEach((item) => {
+				item.addEventListener('click', (e) => {
+					item.classList.toggle('checked');
+					if (!item.classList.contains('checked')) {
+						console.log('yes checked');
+						item.innerHTML = svgHtmlShopping;
+					} else {
+						item.innerHTML = svgHtml;
+					}
+				});
+			});
+		}
 	}, 3000);
 })(),
 	(() => {
