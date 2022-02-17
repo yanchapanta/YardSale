@@ -5,27 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home2</title>
+    <title>sign up</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <!-- menu de desktop -->
+<!-- menu de desktop -->
     <div class="menu-header menu-header-phone">
         <div class="btn-burguer" style="display: var(--hidden-desktop);">
             <img src="../img/icon/icon_menu.svg" alt="logotipo">
@@ -40,20 +31,8 @@
             <a href="#">Toys</a>
             <a href="#">Others</a>
         </nav>
-
         <div>
-            <!-- opcines de gmail de boostrap-->
-            <div class="dropdown btn-order" style="display: var(--hidden-phone);">
-                <button class="btn btn-white dropdown-toggle text-gmail" style="background-color: white;outline: none;" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    camilayokoo@gmail.com 
-                </button>
-                <div class="dropdown-menu box-shadown-1" aria-labelledby="dropdownMenuButton" style="margin-top:1rem;border-radius: 5px; left: 0;right: 0rem;">
-                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-orders.html">My orders</a>
-                    <a class="dropdown-item title-submenu-dropdown p-3" href="my-acount.html">My account</a>
-                    <a class="dropdown-item btn-link bar-top-1 p-3" href="../index.html">log in</a>
-                </div>
-            </div>    
+            <a class="btn-link" href="login.html">Sign in</a>
             <div class="icon">
                 <svg width="30" height="27" viewBox="0 0 30 27" class="icon-menu-color" fill="blue"
                     xmlns="http://www.w3.org/2000/svg">
@@ -66,68 +45,43 @@
         </div>
 
     </div>
-    <section class="section-home container-1">
-        <div class="section-home-container">
-            <div class="search-header">
-                <!-- btn buscar -->
-                <form action="#">
-                    <div class="btn-search bg">
-                        <label for="search">
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.7979 10.9948C12.595 10.7919 12.5481 10.4194 12.6999 10.1694C12.6999 10.1694 12.7688 10.0766 12.9113 9.78552C13.3524 8.88426 13.6 7.87105 13.6 6.8C13.6 3.04446 10.5555 0 6.8 0C3.04446 0 0 3.04446 0 6.8C0 10.5555 3.04446 13.6 6.8 13.6C7.86726 13.6 8.8771 13.3541 9.77595 12.9159C10.0705 12.7723 10.1643 12.7027 10.1643 12.7027C10.4177 12.5512 10.7889 12.592 10.9948 12.7979L14.8234 16.6266C15.3214 17.1245 16.1286 17.1245 16.6266 16.6266C17.1245 16.1286 17.1245 15.3214 16.6266 14.8234L12.7979 10.9948ZM11.05 6.8C11.05 9.14721 9.14721 11.05 6.8 11.05C4.45279 11.05 2.55 9.14721 2.55 6.8C2.55 4.45279 4.45279 2.55 6.8 2.55C9.14721 2.55 11.05 4.45279 11.05 6.8Z"
-                                    fill="#C7C7C7" />
-                            </svg>
-                        </label>
-                        <input id="search" type="text" placeholder="Search product" required>
-                    </div>
-                </form>
+    <!-- account.scss -- formulario acount-->
+    <section class="section-acount container-1">
+        <div class="section-acount-container">
 
-                <div class="menu-home1" style="display: var(--hidden-desktop);">
-                    <nav class="menu">
-                        <a class="btn-menu " href="#">All</a>
-                        <a href="#">Clothes</a>
-                        <a href="#">Electronics</a>
-                        <a href="#">Furniture</a>
-                        <a href="#">Toys</a>
-                        <a href="#">Others</a>
-                    </nav>
-                </div>
-                <div class="btn-order">
-                    <label for="order">Order:</label>
-
-                    <select id="order">
-                        <option>Most recent</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                </div>
+            <div class="subtitle">
+                <h2>Enter data for registration</h2>
             </div>
-            <article>
-                <div class="cards">
-                    <div id="idCardProducts" class="cards-container">
-                        <!-- aca va las tarjetas de los productos de la base de datos
-                            ejemplo simuladoen javascrip en la parte de js/styles.js
-                         -->
+            <!-- formulario sign up-->
+            <form class="form" action="#">
+
+                <div class="form-row">
+                    <div>
+                        <label class="label" for="email">Name</label>
+                        <input class="input" type="text" placeholder="*Camila Yokoo" required>
+                    </div>
+                    <div>
+                        <label class="label" for="email">Email address</label>
+                        <input class="input" type="text" placeholder="*camilayokoo@gmail.com" required>
+                    </div>
+                    <div>
+                        <label class="label" for="email">Password</label>
+                        <input class="input" type="text" placeholder="************" required>
+                    </div>
+                    <div>
+                        <label class="label" for="email">Repeat Password</label>
+                        <input class="input" type="text" placeholder="************" required>
                     </div>
                 </div>
-            </article>
+                <div class="section-login-btn-sign">
+                    <a class="btn-sign" href="index.html">
+                        <small>Sing up</small>
+                    </a>
+                </div>
+            </form>
         </div>
-    </section>
 
-    <script src="../js/styles.js"></script>
-    <script src="js/directLink.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    </section>
 </body>
 
 </html>
