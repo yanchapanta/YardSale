@@ -5,6 +5,7 @@
 	const password = document.getElementById('password');
 	const label = document.querySelectorAll('.label');
 	const btnLog = document.querySelector('form .btn-log');
+	
 	document.addEventListener('DOMContentLoaded', (e) => {
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();

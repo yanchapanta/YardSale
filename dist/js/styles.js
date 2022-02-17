@@ -87,7 +87,17 @@
    
 })(),(()=>{    
      const idCardProducts = document.querySelector('#idCardProducts');
-     //BASE DE DATOS DE INGRESO DE IMAGENES A  LAS TARGETAS
+     let pathAbsolute=self.location.href;
+     //Redireccionar imagenes  cuando sea home-1.html === index.html y cuando esta en home-2.html
+     console.log(pathAbsolute.includes('home-2.html'));
+     let imgPath="";
+     if (pathAbsolute.includes('home-2.html')) {
+         imgPath="../img"
+        }else{
+            imgPath="img"
+            
+        }
+    //BASE DE DATOS DE LOS PRODUCTOS EN CARD
 	 const arrayProducts = [
          { id: '001', image: 'pro1', name: 'Roberto Morales', price: '$120,00' },
 	 	{ id: '001', image: 'pro1', name: 'Round shelf', price: '$120,00' },
@@ -98,12 +108,12 @@
 	 	{ id: '004', image: 'pro5', name: 'Marco yanchapanta', price: '$160,00' }
 	 ];
      arrayProducts.forEach((product) => {
-	 	console.log(product.price);
+
 	 	idCardProducts.innerHTML += `
              <div class="card">
                  <div class="card-img">
                      <a class="btn-remove" href="#">Removed from cart</a>
-                     <img src="../img/product/${product.image}.jpg" alt="product">
+                     <img src="${imgPath}/product/${product.image}.jpg" alt="product">
                  </div>
                  <div class="card-flex">
                      <div>
