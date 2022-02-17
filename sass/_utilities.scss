@@ -1,4 +1,6 @@
 @import 'values';
+@import 'mixins';
+
 // FUENTES
 %text-hours {
 	font-family: 'Quicksand', sans-serif;
@@ -135,7 +137,63 @@ a {
 .icon-close:hover .icon-close-color {
 	fill: $black-color;
 }
+.btn-search {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.7rem 1rem;
 
+	input {
+		border: none;
+		outline: none;
+		background-color: transparent;
+		&:focus {
+			font-weight: 500;
+			color: $gray-color;
+		}
+	}
+	label{
+		
+		svg{
+			margin-top:10px;
+			
+		}
+	}
+	
+}
+.btn-search:hover .btn-search-hover{
+	fill: $green-hover2-color;
+}
+
+
+.btn-order {
+	label {
+		@include text1;
+	}
+	select {
+		@include text1;
+		background-color: white;
+		border: none;
+		color: $gray-color;
+		outline: none;
+		font-weight: normal;
+		&:focus {
+			outline: 1px solid $gray-alpha-color;
+		}
+	}
+}
+//fondo
+.bg {
+	background: #f7f7f7;
+	border: 1px solid #f7f7f7;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
 .card-icon-shopping {
 }
 .card-icon-shopping .card-icon-shopping-hover {

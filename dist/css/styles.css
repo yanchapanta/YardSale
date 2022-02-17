@@ -769,6 +769,66 @@ a:hover {
   fill: #000000;
 }
 
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
 .card-icon-shopping .card-icon-shopping-hover {
   -webkit-transition: fill 0.3s linear, stroke 0.3s linear;
   -o-transition: fill 0.3s linear, stroke 0.3s linear;
@@ -942,6 +1002,66 @@ a:hover {
 
 .icon-close:hover .icon-close-color {
   fill: #000000;
+}
+
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .card-icon-shopping .card-icon-shopping-hover {
@@ -1151,6 +1271,66 @@ a:hover {
 
 .icon-close:hover .icon-close-color {
   fill: #000000;
+}
+
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .card-icon-shopping .card-icon-shopping-hover {
@@ -1487,6 +1667,66 @@ a:hover {
   fill: #000000;
 }
 
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
 .card-icon-shopping .card-icon-shopping-hover {
   -webkit-transition: fill 0.3s linear, stroke 0.3s linear;
   -o-transition: fill 0.3s linear, stroke 0.3s linear;
@@ -1714,6 +1954,66 @@ a:hover {
   fill: #000000;
 }
 
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
 .card-icon-shopping .card-icon-shopping-hover {
   -webkit-transition: fill 0.3s linear, stroke 0.3s linear;
   -o-transition: fill 0.3s linear, stroke 0.3s linear;
@@ -1838,59 +2138,6 @@ a:hover {
   align-items: center;
   gap: 1rem;
 }
-.btn-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-}
-.btn-search input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.btn-search input:focus {
-  font-weight: 500;
-  color: #797979;
-}
-
-.btn-order label {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.btn-order select {
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: Bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: white;
-  border: none;
-  color: #797979;
-  outline: none;
-  font-weight: normal;
-}
-.btn-order select:focus {
-  outline: 1px solid #F7F7F7;
-}
-
-.bg {
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
 .section-home {
   width: 100%;
   height: calc(100vh - 4rem - 4rem);
@@ -1988,6 +2235,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  border: none;
 }
 
 .card-img {
@@ -2211,6 +2459,66 @@ a:hover {
 
 .icon-close:hover .icon-close-color {
   fill: #000000;
+}
+
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+.btn-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn-search input:focus {
+  font-weight: 500;
+  color: #797979;
+}
+.btn-search label svg {
+  margin-top: 10px;
+}
+
+.btn-search:hover .btn-search-hover {
+  fill: #81A385;
+}
+
+.btn-order label {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.btn-order select {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  color: #797979;
+  outline: none;
+  font-weight: normal;
+}
+.btn-order select:focus {
+  outline: 1px solid #F7F7F7;
+}
+
+.bg {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .card-icon-shopping .card-icon-shopping-hover {

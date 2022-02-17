@@ -1,50 +1,7 @@
 @import 'values';
 @import 'mixins';
-//GENERAL
-.btn-search {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	gap: 0.5rem;
-	padding: 0.5rem 1rem;
-	input {
-		border: none;
-		outline: none;
-		background-color: transparent;
-		&:focus {
-			font-weight: 500;
-			color: $gray-color;
-		}
-	}
-}
 
-.btn-order {
-	label {
-		@include text1;
-	}
-	select {
-		@include text1;
-		background-color: white;
-		border: none;
-		color: $gray-color;
-		outline: none;
-		font-weight: normal;
-		&:focus {
-			outline: 1px solid $gray-alpha-color;
-		}
-	}
-}
-//fondo
-.bg {
-	background: #f7f7f7;
-	border: 1px solid #f7f7f7;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
+
 //------------------HOME1---------------------//
 .section-home {
 	width: 100%;
@@ -131,6 +88,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 1rem;
+	border: none;
 }
 .card-img {
 	box-shadow: $box-shadow2;
