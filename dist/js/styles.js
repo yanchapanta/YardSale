@@ -62,11 +62,12 @@
                 </svg>
     
     `;
-	// BOTON SHOPPING ACTIVA Y CHECKED
+	// boton agregar mas redirigir a login por que no es usuario
 	setTimeout(() => {
 		const cardIconEnabled = document.querySelectorAll('.card-icon-shopping');
 		cardIconEnabled.forEach((item) => {
-			item.addEventListener('click', (e) => {
+            item.addEventListener('click', (e) => {
+                location.href='complement/login.html';
 				item.classList.toggle('checked');
 				if (!item.classList.contains('checked')) {
 					console.log('yes checked');
