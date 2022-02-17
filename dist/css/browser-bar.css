@@ -60,6 +60,16 @@ a:hover {
   border-top: 1px solid #979797;
 }
 
+.btn-link {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #25b138;
+  transition: background-color 0.3s linear;
+}
 .icon {
   fill: #797979;
   -webkit-transition: fill 0.3s linear;

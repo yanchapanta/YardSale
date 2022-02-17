@@ -106,6 +106,9 @@ a {
 .bar-top-1{
 	@include bar-top;
 }
+.btn-link{
+	@include btn-link;
+}
  .icon {
  	fill: $gray-color;
  	-webkit-transition: fill 0.3s linear;

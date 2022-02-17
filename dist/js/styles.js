@@ -183,14 +183,16 @@
                  <div class="card">
                      <div class="card-img">
                          <a class="btn-remove" href="#">Removed from cart</a>
+                         <a href="#modal-add-card">
                          <img src="${imgPath}/product/${product.image}.jpg" alt="product">
+                         </a>
                      </div>
                      <div class="card-flex">
                          <div>
                              <p class="card-price">${product.price}</p>
                              <p class="card-name">${product.name}</p>
                          </div>
-                         <a href="#modal-add-card" class="card-icon-shopping">
+                         <a href="#modal-orders-card" class="card-icon-shopping">
                              <svg width="49" height="48"
                           
                              viewBox="0 0 49 48" fill="none"
