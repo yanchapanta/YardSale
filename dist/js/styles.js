@@ -104,10 +104,10 @@
 		//Redireccionar imagenes  cuando sea home-1.html === index.html y cuando esta en home-2.html
 
 		let imgPath = '';
-		if (pathAbsolute.includes('home-2.html')) {
-			imgPath = '../img';
+		if (pathAbsolute.includes('index.html')) {
+            imgPath = 'img';
 		} else {
-			imgPath = 'img';
+			imgPath = '../img';
 		}
 		//BASE DE DATOS DE LOS PRODUCTOS EN CARD
 		const arrayProducts = [
@@ -176,7 +176,8 @@
              `;
 				});
 			} else {
-				//´card para usuarios que estan logeado
+           
+				//card para usuarios que estan logeado
 				arrayProducts.forEach((product) => {
 					idCardProducts.innerHTML += `
                  <div class="card">
